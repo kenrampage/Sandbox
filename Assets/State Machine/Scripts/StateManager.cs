@@ -21,12 +21,12 @@ public class StateManager : MonoBehaviour
         _previousStateName = previousStateName;
         _currentStateName = nextStateName;
 
-        print(gameObject.name + "Confirmed State Change from " + _previousStateName + " to " + _currentStateName);
+        print(gameObject.name + " | Confirmed State Change from " + _previousStateName + " to " + _currentStateName);
     }
 
     public void RejectStateChange(string previousStateName, string nextStateName)
     {
-        print(gameObject.name + "No transition setup from " + previousStateName + " to " + nextStateName);
+        //A place for logic later
     }
 
 }

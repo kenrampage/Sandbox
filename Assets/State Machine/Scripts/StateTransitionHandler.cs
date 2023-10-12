@@ -36,9 +36,10 @@ public class StateTransitionHandler : MonoBehaviour
             }
         }
 
-        if (!stateChanged)
+        if (stateChanged == false)
         {
             _stateManager.RejectStateChange(currentStateName, nextStateName);
+            print(gameObject.name + " | No transition from " + currentStateName + " to " + nextStateName);
         }
     }
 
