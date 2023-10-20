@@ -7,6 +7,46 @@ public class SessionDataManager : MonoBehaviour
 {
     [SerializeField] private Dictionary<string, SessionDataValue> _sessionData = new Dictionary<string, SessionDataValue>();
 
+
+
+
+    //Create dictionaries of each type. Use an enum and a switch statement when getting/setting the data to determine which dictionary to use
+    [SerializeField] private Dictionary<string, int> _intData = new Dictionary<string, int>();
+    [SerializeField] private Dictionary<string, bool> _boolData = new Dictionary<string, bool>();
+    [SerializeField] private Dictionary<string, float> _floatData = new Dictionary<string, float>();
+    [SerializeField] private Dictionary<string, string> _stringData = new Dictionary<string, string>();
+
+    public void AddDatatoTypeDictionary(string valueKey, SessionDataValueType valueType, object value)
+    {
+        switch (valueType)
+        {
+            case SessionDataValueType.INT:
+                _intData.Add(valueKey, (int)value);
+                break;
+            case SessionDataValueType.FLOAT:
+                _floatData.Add(valueKey, (float)value);
+                break;
+            case SessionDataValueType.STRING:
+                _stringData.Add(valueKey, (string)value);
+                break;
+            case SessionDataValueType.BOOL:
+                _boolData.Add(valueKey, (bool)value);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public int GetIntDataValue(string valueKey)
+    {
+        return _intData[valueKey];
+    }
+
+
+
+
+
+
     public SessionDataValue TestDataValue;
 
     //[Header("Debug")]
