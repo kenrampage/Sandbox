@@ -41,8 +41,9 @@ public class VariableReader : MonoBehaviour
         {
             FieldInfo field = component.GetType().GetField(SourceName);
             MethodInfo method = component.GetType().GetMethod(SourceName);
+            PropertyInfo property = component.GetType().GetProperty(SourceName);
 
-            if (field != null || method != null)
+            if (field != null || method != null || property != null)
             {
                 object value = null;
                 Type valueType = null;
@@ -57,17 +58,21 @@ public class VariableReader : MonoBehaviour
                     value = method.Invoke(component, null);
                     valueType = method.ReturnType;
                 }
+                else if (property != null)
+                {
+                    value = property.GetValue(component);
+                    valueType = property.PropertyType;
+                }
 
                 if (value != null)
                 {
                     _persistentDataManager.AddValue(DataKey, new PersistentData(value, valueType));
-                    Debug.Log($"Retrieved value from component {(field != null ? "field" : "method")} {SourceName}: {value} {valueType}");
+                    Debug.Log($"Retrieved value from component {(field != null ? "field" : method != null ? "method" : "property")} {SourceName}: {value} {valueType}");
                     return;
                 }
             }
         }
 
-        Debug.LogWarning($"No field or method found with the name {SourceName} in the script or components on the GameObject.");
-    }
 
+    }
 }

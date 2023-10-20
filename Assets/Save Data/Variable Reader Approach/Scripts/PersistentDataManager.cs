@@ -28,7 +28,7 @@ public class PersistentDataManager : MonoBehaviour
 
     #endregion
 
-    private Dictionary<string, PersistentData> _data = new Dictionary<string, PersistentData>();
+    [HideInInspector] public Dictionary<string, PersistentData> _data = new Dictionary<string, PersistentData>();
 
     [HideInInspector] public UnityEvent OnRetrieveValues;
 
@@ -74,5 +74,12 @@ public class PersistentDataManager : MonoBehaviour
     public void TriggerRetrieveValues()
     {
         OnRetrieveValues.Invoke();
+    }
+
+    [ContextMenu("Clear Data")]
+    public void ClearData()
+    {
+        _data.Clear();
+        Debug.Log("Data has been cleared");
     }
 }
