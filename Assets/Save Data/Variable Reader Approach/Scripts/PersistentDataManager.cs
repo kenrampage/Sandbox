@@ -2,19 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class PersistentData
-{
-    public object Value;
-    public Type ValueType;
-
-    public PersistentData(object value, Type valueType)
-    {
-        Value = value;
-        ValueType = valueType;
-    }
-
-}
 public class PersistentDataManager : MonoBehaviour
 {
     #region Singleton
@@ -40,14 +29,14 @@ public class PersistentDataManager : MonoBehaviour
     #endregion
 
     private Dictionary<string, PersistentData> _data = new Dictionary<string, PersistentData>();
-    //private Dictionary<string, object> _values = new Dictionary<string, object>();
-    //private Dictionary<string, Type> _types = new Dictionary<string, Type>();
 
+    [HideInInspector] public UnityEvent OnRetrieveValues;
+
+
+
+    #region Add/Get data
     public void AddValue(string dataKey, object value, Type type)
     {
-        //_values.Add(key, value);
-        //_types.Add(key, type);
-
         PersistentData data = new PersistentData(value, type);
 
         _data[dataKey] = data;
@@ -70,6 +59,7 @@ public class PersistentDataManager : MonoBehaviour
             return null;
         }
     }
+    #endregion
 
     [ContextMenu("Print All Data")]
     public void PrintAllData()
@@ -78,5 +68,11 @@ public class PersistentDataManager : MonoBehaviour
         {
             Debug.Log("Key: " + data.Key + " | Value:" + data.Value.Value + " | Type:" + data.Value.ValueType);
         }
+    }
+
+    [ContextMenu("Retrieve Values")]
+    public void TriggerRetrieveValues()
+    {
+        OnRetrieveValues.Invoke();
     }
 }
