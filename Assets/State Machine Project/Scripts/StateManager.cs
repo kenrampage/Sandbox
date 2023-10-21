@@ -4,12 +4,12 @@ using UnityEngine.Events;
 //Tracks current state and previous state and invokes OnStateChange event when state changes
 public class StateManager : MonoBehaviour
 {
-    [Header("Data")]
+    [Header("Data (Read Only)")]
     [SerializeField] private string _previousStateName;
     [SerializeField] private string _currentStateName;
 
     [Header("Events")]
-    public UnityEvent<string, string> OnTryStateChange;
+    [HideInInspector] public UnityEvent<string, string> OnTryStateChange;
 
     public void TryChangeState(string nextStateName)
     {
