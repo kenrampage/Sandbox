@@ -4,50 +4,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PersistentDataManager : MonoBehaviour
+public class SessionDataManager : MonoBehaviour
 {
     #region Singleton
-    private static PersistentDataManager instance;
-    public static PersistentDataManager Instance
+    private static SessionDataManager instance;
+    public static SessionDataManager Instance
     {
         get
         {
             if (instance == null)
             {
-                instance = new PersistentDataManager();
+                instance = new SessionDataManager();
             }
             return instance;
         }
     }
 
     // Private constructor to prevent instantiation from other classes
-    private PersistentDataManager()
+    private SessionDataManager()
     {
         // Initialize Singleton here
     }
 
     #endregion
 
-    [HideInInspector] public Dictionary<string, PersistentData> _data = new Dictionary<string, PersistentData>();
+    private Dictionary<string, SessionDataValue> _data = new Dictionary<string, SessionDataValue>();
 
-    [HideInInspector] public UnityEvent OnRetrieveValues;
+    [HideInInspector] public UnityEvent TriggerRetrieveValues;
+    [HideInInspector] public UnityEvent TriggerSetValues;
 
 
 
     #region Add/Get data
     public void AddValue(string dataKey, object value, Type type)
     {
-        PersistentData data = new PersistentData(value, type);
-
-        _data[dataKey] = data;
+        if (!_data.ContainsKey(dataKey))
+        {
+            _data[dataKey] = new SessionDataValue(value, type);
+        }
+        else
+        {
+            Debug.LogWarning("Key already exists: " + dataKey);
+        }
     }
 
-    public void AddValue(string dataKey, PersistentData persistentData)
+    public void AddValue(string dataKey, SessionDataValue persistentData)
     {
         _data.Add(dataKey, persistentData);
     }
 
-    public PersistentData GetValue(string dataKey)
+    public SessionDataValue GetValue(string dataKey)
     {
         if (_data.ContainsKey(dataKey))
         {
@@ -58,6 +64,11 @@ public class PersistentDataManager : MonoBehaviour
             Debug.LogWarning("Key not found: " + dataKey);
             return null;
         }
+    }
+
+    public Dictionary<string, SessionDataValue> GetDictionary()
+    {
+        return _data;
     }
     #endregion
 
@@ -71,9 +82,17 @@ public class PersistentDataManager : MonoBehaviour
     }
 
     [ContextMenu("Retrieve Values")]
-    public void TriggerRetrieveValues()
+    public void RetrieveValues()
     {
-        OnRetrieveValues.Invoke();
+        TriggerRetrieveValues.Invoke();
+        Debug.Log("Telling Value Handlers to retrieve data");
+    }
+
+    [ContextMenu("Set Values")]
+    public void SetValues()
+    {
+        TriggerSetValues.Invoke();
+        Debug.Log("Telling Value Handlers to set data");
     }
 
     [ContextMenu("Clear Data")]

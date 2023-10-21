@@ -1,11 +1,12 @@
 ﻿using System;
 
-public class PersistentData
+public class SessionDataValue
+
 {
     public object Value;
     public Type ValueType;
 
-    public PersistentData(object value, Type valueType)
+    public SessionDataValue(object value, Type valueType)
     {
         Value = value;
         ValueType = valueType;
