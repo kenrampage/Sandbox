@@ -1,40 +1,62 @@
 using System;
+using System.Data;
 using System.Reflection;
 using UnityEngine;
 
 public class SessionDataReadWrite : MonoBehaviour
 {
-    [Header("Data Manager Settings")]
-    [SerializeField] private SessionDataManager _persistentDataManager;
+
+    private SessionDataManager _sessionDataManager;
+
+    [Header("Data Storage")]
     public string DataKey;
 
-    [Header("Object Settings")]
+    [Header("Target Object")]
     public GameObject TargetGameObject;
+    [Space(10)]
     public string ValueSourceName;
     public string ValueTargetName;
 
+    #region Init
+    private void Awake()
+    {
+        GetReferences();
+    }
+
     private void OnEnable()
     {
-        _persistentDataManager.TriggerRetrieveValues.AddListener(RetrieveValue);
-        _persistentDataManager.TriggerSetValues.AddListener(SetValue);
+        _sessionDataManager.TriggerReadValues.AddListener(ReadValue);
+        _sessionDataManager.TriggerWriteValues.AddListener(WriteValue);
     }
 
     private void OnDisable()
     {
-        _persistentDataManager.TriggerRetrieveValues.RemoveListener(RetrieveValue);
-        _persistentDataManager.TriggerSetValues.RemoveListener(SetValue);
+        _sessionDataManager.TriggerReadValues.RemoveListener(ReadValue);
+        _sessionDataManager.TriggerWriteValues.RemoveListener(WriteValue);
     }
 
+    private void GetReferences()
+    {
+        if (_sessionDataManager == null)
+        {
+            _sessionDataManager = SessionDataManager.Instance;
+        }
+    }
+
+    #endregion
+
     [ContextMenu("Get Value")]
-    public void RetrieveValue()
+    public void ReadValue()
     {
         if (string.IsNullOrEmpty(ValueSourceName))
         {
-            Debug.LogWarning("ValueSourceName is empty. Cannot retrieve data.");
+            Debug.LogWarning("ValueSourceName is empty. Cannot read data.");
             return;
         }
 
         Component[] components = TargetGameObject.GetComponents<Component>();
+
+        bool sourceFound = false;
 
         foreach (Component component in components)
         {
@@ -44,6 +66,8 @@ public class SessionDataReadWrite : MonoBehaviour
 
             if (field != null || method != null || property != null)
             {
+                sourceFound = true;
+
                 object value = null;
                 Type valueType = null;
 
@@ -65,24 +89,32 @@ public class SessionDataReadWrite : MonoBehaviour
 
                 if (value != null)
                 {
-                    _persistentDataManager.AddValue(DataKey, new SessionDataValue(value, valueType));
-                    // Debug.Log($"Retrieved value from component {(field != null ? "field" : method != null ? "method" : "property")} {ValueSourceName}: {value} {valueType}");
+                    _sessionDataManager.AddValue(DataKey, new SessionDataValue(value, valueType));
+                    //Debug.Log($"Read value from component {(field != null ? "field" : method != null ? "method" : "property")} {ValueSourceName}: {value} {valueType}");
                     return;
                 }
+
             }
+        }
+
+        if (!sourceFound)
+        {
+            Debug.LogWarning("No Source called " + ValueSourceName + " was found");
         }
     }
 
     [ContextMenu("Set Value")]
-    public void SetValue()
+    public void WriteValue()
     {
         if (string.IsNullOrEmpty(ValueTargetName))
         {
-            Debug.LogWarning("ValueTargetName is empty. Cannot set data.");
+            Debug.LogWarning("ValueTargetName is empty. Cannot write data.");
             return;
         }
 
         Component[] components = TargetGameObject.GetComponents<Component>();
+
+        bool targetFound = false;
 
         foreach (Component component in components)
         {
@@ -92,15 +124,15 @@ public class SessionDataReadWrite : MonoBehaviour
 
             if (field != null || method != null || property != null)
             {
-                object value = _persistentDataManager.GetValue(DataKey)?.Value;
+                targetFound = true;
+                object value = _sessionDataManager.GetValue(DataKey)?.Value;
 
                 if (value == null)
                 {
-                    Debug.Log("No data available with that name");
                     return;
                 }
 
-                Type sourceValueType = _persistentDataManager.GetValue(DataKey)?.ValueType;
+                Type sourceValueType = _sessionDataManager.GetValue(DataKey)?.ValueType;
                 Type targetValueType;
 
                 if (field != null)
@@ -146,6 +178,10 @@ public class SessionDataReadWrite : MonoBehaviour
                     }
                 }
             }
+        }
+        if (!targetFound)
+        {
+            Debug.LogWarning("No Target called " + ValueTargetName + " was found");
         }
     }
 }

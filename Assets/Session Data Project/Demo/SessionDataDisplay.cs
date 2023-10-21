@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SessionDataDisplay : MonoBehaviour
 {
-    [SerializeField] private SessionDataManager _persistentDataManager;
+    private SessionDataManager _sessionDataManager;
 
     private List<GameObject> _currentTextObjects = new List<GameObject>();
 
     private void Awake()
     {
-        if (_persistentDataManager == null)
-        {
-            _persistentDataManager = SessionDataManager.Instance;
-        }
+        _sessionDataManager = SessionDataManager.Instance;
     }
 
     public GameObject TextTemplate;
@@ -29,9 +27,9 @@ public class SessionDataDisplay : MonoBehaviour
     [ContextMenu("Add All Data")]
     public void AddAllDataEntries()
     {
-        foreach (var dataEntry in _persistentDataManager.GetDictionary())
+        foreach (var dataEntry in _sessionDataManager.GetDictionary())
         {
-            AddDataEntry("Key: " + dataEntry.Key + " | Type: " + dataEntry.Value.ValueType.ToString() + " | Value: " + dataEntry.Value.Value);
+            AddDataEntry("Key: " + dataEntry.Key + " | Value: " + dataEntry.Value.Value + " | Type: " + dataEntry.Value.ValueType.ToString());
         }
     }
 

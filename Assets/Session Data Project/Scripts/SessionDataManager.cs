@@ -6,36 +6,49 @@ using UnityEngine.Events;
 
 public class SessionDataManager : MonoBehaviour
 {
-    #region Singleton
-    private static SessionDataManager instance;
+    #region Singleton Pattern
+    private static SessionDataManager _instance;
     public static SessionDataManager Instance
     {
         get
         {
-            if (instance == null)
+            if (_instance == null)
             {
-                instance = new SessionDataManager();
+                _instance = FindObjectOfType<SessionDataManager>();
+                DontDestroyOnLoad(_instance.gameObject);
             }
-            return instance;
+            return _instance;
         }
-    }
-
-    // Private constructor to prevent instantiation from other classes
-    private SessionDataManager()
-    {
-        // Initialize Singleton here
     }
 
     #endregion
 
     private Dictionary<string, SessionDataValue> _data = new Dictionary<string, SessionDataValue>();
 
-    [HideInInspector] public UnityEvent TriggerRetrieveValues;
-    [HideInInspector] public UnityEvent TriggerSetValues;
+    [HideInInspector] public UnityEvent TriggerReadValues;
+    [HideInInspector] public UnityEvent TriggerWriteValues;
 
+    #region Init
+    private void Awake()
+    {
+        GetReferences();
+    }
 
+    private void GetReferences()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+        else if (_instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
-    #region Add/Get data
+    #endregion
+
+    #region Dictionary Management
     public void AddValue(string dataKey, object value, Type type)
     {
         if (!_data.ContainsKey(dataKey))
@@ -48,9 +61,16 @@ public class SessionDataManager : MonoBehaviour
         }
     }
 
-    public void AddValue(string dataKey, SessionDataValue persistentData)
+    public void AddValue(string dataKey, SessionDataValue sessionDataValue)
     {
-        _data.Add(dataKey, persistentData);
+        if (!_data.ContainsKey(dataKey))
+        {
+            _data[dataKey] = sessionDataValue;
+        }
+        else
+        {
+            Debug.LogWarning("Key already exists: " + dataKey);
+        }
     }
 
     public SessionDataValue GetValue(string dataKey)
@@ -72,7 +92,6 @@ public class SessionDataManager : MonoBehaviour
     }
     #endregion
 
-    [ContextMenu("Print All Data")]
     public void PrintAllData()
     {
         foreach (var data in _data)
@@ -81,21 +100,18 @@ public class SessionDataManager : MonoBehaviour
         }
     }
 
-    [ContextMenu("Retrieve Values")]
-    public void RetrieveValues()
+    public void ReadValuesFromObjects()
     {
-        TriggerRetrieveValues.Invoke();
-        Debug.Log("Telling Value Handlers to retrieve data");
+        TriggerReadValues?.Invoke();
+        Debug.Log("Reading values from Source Objects");
     }
 
-    [ContextMenu("Set Values")]
-    public void SetValues()
+    public void WriteValuesToObjects()
     {
-        TriggerSetValues.Invoke();
-        Debug.Log("Telling Value Handlers to set data");
+        TriggerWriteValues.Invoke();
+        Debug.Log("Writing values to Target Objects");
     }
 
-    [ContextMenu("Clear Data")]
     public void ClearData()
     {
         _data.Clear();

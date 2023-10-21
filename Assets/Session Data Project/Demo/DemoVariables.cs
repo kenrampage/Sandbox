@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class DemoVariables : MonoBehaviour
 {
-    public string DemoString = "Demo String Value";
-    public bool DemoBool = false;
+    [Tooltip("field: DemoString")]
+    public string DemoString;
 
+    [SerializeField, Tooltip("property: DemoBool")]
+    private bool _demoBool;
 
-    [SerializeField] private int _demoInt = 58;
+    
+    public bool DemoBool
+    {
+        get { return _demoBool; }
+        set { _demoBool = value; }
+    }
+
+    [Tooltip("method: GetDemoInt() | SetDemoInt()")]
+    [SerializeField] private int _demoInt;
     public int GetDemoInt()
     {
         return _demoInt;
