@@ -13,4 +13,9 @@ public class DemoVariables : MonoBehaviour
     {
         return _demoInt;
     }
+
+    public void SetDemoInt(int demoInt)
+    {
+        _demoInt = demoInt;
+    }
 }

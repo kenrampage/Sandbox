@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class PersistentDataDisplay : MonoBehaviour
+public class SessionDataDisplay : MonoBehaviour
 {
-    [SerializeField] private PersistentDataManager _persistentDataManager;
+    [SerializeField] private SessionDataManager _persistentDataManager;
 
     private List<GameObject> _currentTextObjects = new List<GameObject>();
 
@@ -13,7 +13,7 @@ public class PersistentDataDisplay : MonoBehaviour
     {
         if (_persistentDataManager == null)
         {
-            _persistentDataManager = PersistentDataManager.Instance;
+            _persistentDataManager = SessionDataManager.Instance;
         }
     }
 
@@ -29,7 +29,7 @@ public class PersistentDataDisplay : MonoBehaviour
     [ContextMenu("Add All Data")]
     public void AddAllDataEntries()
     {
-        foreach (var dataEntry in _persistentDataManager._data)
+        foreach (var dataEntry in _persistentDataManager.GetDictionary())
         {
             AddDataEntry("Key: " + dataEntry.Key + " | Type: " + dataEntry.Value.ValueType.ToString() + " | Value: " + dataEntry.Value.Value);
         }
