@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VariableReaderAdapter_Transform : MonoBehaviour
+public class SessionDataReadWriteAdapter_Transform : MonoBehaviour
 {
     [SerializeField] private Transform _transform;
 
