@@ -444,78 +444,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 317051854}
-  - component: {fileID: 317051850}
-  - component: {fileID: 317051853}
-  - component: {fileID: 317051852}
-  - component: {fileID: 317051851}
   m_Layer: 0
-  m_Name: Demo Object
+  m_Name: Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &317051850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317051849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e90c618c64beba43890b379406cbbae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transform: {fileID: 317051854}
---- !u!114 &317051851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317051849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DataKey: ObjectScale
-  TargetGameObject: {fileID: 317051849}
-  ValueSourceName: Scale
-  ValueTargetName: Scale
---- !u!114 &317051852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317051849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DataKey: ObjectRotation
-  TargetGameObject: {fileID: 317051849}
-  ValueSourceName: Rotation
-  ValueTargetName: Rotation
---- !u!114 &317051853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 317051849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DataKey: ObjectPosition
-  TargetGameObject: {fileID: 317051849}
-  ValueSourceName: Position
-  ValueTargetName: Position
 --- !u!4 &317051854
 Transform:
   m_ObjectHideFlags: 0
@@ -524,13 +459,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317051849}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 20, z: 150}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.6532815, y: 0.27059805, z: 0.27059805, w: 0.6532815}
+  m_LocalPosition: {x: -15, y: 25, z: 150}
+  m_LocalScale: {x: 0.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1741982398}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 45}
 --- !u!1 &424579016
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,10 +899,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 975788792}
-  - component: {fileID: 975788791}
+  - component: {fileID: 975788797}
   - component: {fileID: 975788795}
   - component: {fileID: 975788794}
-  - component: {fileID: 975788793}
+  - component: {fileID: 975788796}
   m_Layer: 0
   m_Name: Demo Player
   m_TagString: Untagged
@@ -975,21 +910,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &975788791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975788790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3068f9c1227bf704ba962a4d791c5c2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DemoString: Patrick
-  _demoBool: 0
-  _demoInt: 15
 --- !u!4 &975788792
 Transform:
   m_ObjectHideFlags: 0
@@ -1005,22 +925,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &975788793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 975788790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DataKey: PlayerLevel1Completed
-  TargetGameObject: {fileID: 975788790}
-  ValueSourceName: DemoBool
-  ValueTargetName: DemoBool
 --- !u!114 &975788794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,10 +937,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataKey: PlayerLevel
   TargetGameObject: {fileID: 975788790}
-  ValueSourceName: GetDemoInt
-  ValueTargetName: SetDemoInt
+  ValueSourceName: GetLevel
+  ValueTargetName: SetLevel
+  DataKey: PlayerLevel
 --- !u!114 &975788795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1049,10 +953,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataKey: PlayerName
   TargetGameObject: {fileID: 975788790}
-  ValueSourceName: DemoString
-  ValueTargetName: DemoString
+  ValueSourceName: Name
+  ValueTargetName: Name
+  DataKey: PlayerName
+--- !u!114 &975788796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975788790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGameObject: {fileID: 975788790}
+  ValueSourceName: IsAlive
+  ValueTargetName: IsAlive
+  DataKey: PlayerIsAlive
+--- !u!114 &975788797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975788790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff61d9e283c0de48a06b37224678ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Patrick
+  _isAlive: 1
+  _level: 15
 --- !u!1 &1043068365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1247522142}
-  - component: {fileID: 1247522141}
+  - component: {fileID: 1247522146}
   - component: {fileID: 1247522145}
   - component: {fileID: 1247522144}
   - component: {fileID: 1247522143}
@@ -1207,21 +1142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1247522141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247522140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3068f9c1227bf704ba962a4d791c5c2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DemoString: Russell
-  _demoBool: 0
-  _demoInt: 3
 --- !u!4 &1247522142
 Transform:
   m_ObjectHideFlags: 0
@@ -1249,10 +1169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataKey: EnemyLevel1Completed
   TargetGameObject: {fileID: 1247522140}
-  ValueSourceName: DemoBool
-  ValueTargetName: DemoBool
+  ValueSourceName: IsAlive
+  ValueTargetName: IsAlive
+  DataKey: EnemyIsAlive
 --- !u!114 &1247522144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,10 +1185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataKey: EnemyLevel
   TargetGameObject: {fileID: 1247522140}
-  ValueSourceName: GetDemoInt
-  ValueTargetName: SetDemoInt
+  ValueSourceName: GetLevel
+  ValueTargetName: SetLevel
+  DataKey: EnemyLevel
 --- !u!114 &1247522145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,10 +1201,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataKey: EnemyName
   TargetGameObject: {fileID: 1247522140}
-  ValueSourceName: DemoString
-  ValueTargetName: DemoString
+  ValueSourceName: Name
+  ValueTargetName: Name
+  DataKey: EnemyName
+--- !u!114 &1247522146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247522140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0306a5bbdbccc694690273474fb65448, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Russell
+  _isAlive: 0
+  _level: 3
 --- !u!1 &1395276953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +1356,120 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395276953}
   m_CullTransparentMesh: 1
+--- !u!1 &1741982393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741982398}
+  - component: {fileID: 1741982399}
+  - component: {fileID: 1741982397}
+  - component: {fileID: 1741982396}
+  - component: {fileID: 1741982395}
+  - component: {fileID: 1741982394}
+  m_Layer: 0
+  m_Name: Demo Quest Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1741982394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741982393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGameObject: {fileID: 1741982393}
+  ValueSourceName: ActiveSelf
+  ValueTargetName: ActiveSelf
+  DataKey: QuestObjectActiveSelf
+--- !u!114 &1741982395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741982393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGameObject: {fileID: 1741982393}
+  ValueSourceName: LocalScale
+  ValueTargetName: LocalScale
+  DataKey: QuestObjectScale
+--- !u!114 &1741982396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741982393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGameObject: {fileID: 1741982393}
+  ValueSourceName: Rotation
+  ValueTargetName: Rotation
+  DataKey: QuestObjectRotation
+--- !u!114 &1741982397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741982393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a19d89907d374742a1b94a349727230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetGameObject: {fileID: 1741982393}
+  ValueSourceName: Position
+  ValueTargetName: Position
+  DataKey: QuestObjectPosition
+--- !u!4 &1741982398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741982393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 317051854}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741982399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741982393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e90c618c64beba43890b379406cbbae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transform: {fileID: 317051854}
 --- !u!1 &1852798130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,8 +1822,8 @@ SceneRoots:
   - {fileID: 424579019}
   - {fileID: 651075512}
   - {fileID: 26416730}
-  - {fileID: 118803254}
+  - {fileID: 861404849}
   - {fileID: 975788792}
   - {fileID: 1247522142}
-  - {fileID: 317051854}
-  - {fileID: 861404849}
+  - {fileID: 1741982398}
+  - {fileID: 118803254}

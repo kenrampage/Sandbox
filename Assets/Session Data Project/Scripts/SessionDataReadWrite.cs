@@ -5,17 +5,14 @@ using UnityEngine;
 
 public class SessionDataReadWrite : MonoBehaviour
 {
-
     private SessionDataManager _sessionDataManager;
 
-    [Header("Data Storage")]
-    public string DataKey;
-
-    [Header("Target Object")]
     public GameObject TargetGameObject;
     [Space(10)]
     public string ValueSourceName;
     public string ValueTargetName;
+    [Space(10)]
+    public string DataKey;
 
     #region Init
     private void Awake()
@@ -45,7 +42,6 @@ public class SessionDataReadWrite : MonoBehaviour
 
     #endregion
 
-    [ContextMenu("Get Value")]
     public void ReadValue()
     {
         if (string.IsNullOrEmpty(ValueSourceName))
@@ -103,7 +99,6 @@ public class SessionDataReadWrite : MonoBehaviour
         }
     }
 
-    [ContextMenu("Set Value")]
     public void WriteValue()
     {
         if (string.IsNullOrEmpty(ValueTargetName))
@@ -143,6 +138,10 @@ public class SessionDataReadWrite : MonoBehaviour
                     {
                         field.SetValue(component, value);
                     }
+                    else
+                    {
+                        Debug.LogWarning("Type Mismatch between source:" + sourceValueType + " & target:" + targetValueType);
+                    }
                 }
                 else if (property != null)
                 {
@@ -151,6 +150,10 @@ public class SessionDataReadWrite : MonoBehaviour
                     if (targetValueType == sourceValueType)
                     {
                         property.SetValue(component, value);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Type Mismatch between source:" + sourceValueType + " & target:" + targetValueType);
                     }
                 }
                 else if (method != null)
@@ -169,7 +172,7 @@ public class SessionDataReadWrite : MonoBehaviour
                         }
                         else
                         {
-                            Debug.LogError("Method parameters do not match your requirements.");
+                            Debug.LogWarning("Type Mismatch between source:" + sourceValueType + " & target:" + targetValueType);
                         }
                     }
                     else
@@ -184,4 +187,5 @@ public class SessionDataReadWrite : MonoBehaviour
             Debug.LogWarning("No Target called " + ValueTargetName + " was found");
         }
     }
+
 }

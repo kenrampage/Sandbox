@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -92,6 +91,8 @@ public class SessionDataManager : MonoBehaviour
     }
     #endregion
 
+    #region System Control
+
     public void PrintAllData()
     {
         foreach (var data in _data)
@@ -117,4 +118,6 @@ public class SessionDataManager : MonoBehaviour
         _data.Clear();
         Debug.Log("Data has been cleared");
     }
+
+    #endregion
 }
