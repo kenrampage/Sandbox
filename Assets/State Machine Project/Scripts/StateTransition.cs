@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public class StateTransition
@@ -10,7 +11,7 @@ public class StateTransition
     private string _wildcardCharacter = "*";
 
     [Header("Events")]
-    public UnityEvent _OnTransition;
+    public UnityEvent OnTransition;
 
     public bool HandleTransition(string currentStateName, string nextStateName)
     {
@@ -18,7 +19,7 @@ public class StateTransition
         {
             if (_nextStateName == nextStateName || _nextStateName == _wildcardCharacter)
             {
-                _OnTransition?.Invoke();
+                OnTransition?.Invoke();
 
                 Debug.Log("Performed Transition from " + currentStateName + " to " + nextStateName);
 
