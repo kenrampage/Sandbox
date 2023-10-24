@@ -86,7 +86,7 @@ public class SessionDataReadWrite : MonoBehaviour
                 if (value != null)
                 {
                     _sessionDataManager.AddValue(DataKey, new SessionDataValue(value, valueType));
-                    //Debug.Log($"Read value from component {(field != null ? "field" : method != null ? "method" : "property")} {ValueSourceName}: {value} {valueType}");
+                    Debug.Log($"Read value from component {(field != null ? "field" : method != null ? "method" : "property")} {ValueSourceName}: {value} {valueType}");
                     return;
                 }
 
@@ -95,7 +95,7 @@ public class SessionDataReadWrite : MonoBehaviour
 
         if (!sourceFound)
         {
-            Debug.LogWarning("No Source called " + ValueSourceName + " was found");
+            Debug.Log("No Source called " + ValueSourceName + " was found. Will not read data.");
         }
     }
 
@@ -103,7 +103,7 @@ public class SessionDataReadWrite : MonoBehaviour
     {
         if (string.IsNullOrEmpty(ValueTargetName))
         {
-            Debug.LogWarning("ValueTargetName is empty. Cannot write data.");
+            Debug.Log("ValueTargetName is empty. Will not write data.");
             return;
         }
 

@@ -56,7 +56,8 @@ public class SessionDataManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Key already exists: " + dataKey);
+            _data[dataKey] = new SessionDataValue(value, type);
+            Debug.Log("Key already exists: " + dataKey + ". Updating Value");
         }
     }
 
@@ -68,7 +69,8 @@ public class SessionDataManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Key already exists: " + dataKey);
+            _data[dataKey] = sessionDataValue;
+            Debug.Log("Key already exists: " + dataKey + ". Updating Value");
         }
     }
 
