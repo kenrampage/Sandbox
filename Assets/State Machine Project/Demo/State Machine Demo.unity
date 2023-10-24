@@ -171,9 +171,45 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Pause
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1610556280}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 532675873}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2106770022}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 454966554}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -186,108 +222,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 512130128}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 454966555}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2106770023}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 532675874}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 150465496}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1375057029}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 251549608}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Pause
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1224301386}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Off
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _currentStateName: Player
-    _nextStateName: Pause
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2106770022}
+        - m_Target: {fileID: 150465495}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
           m_Mode: 3
@@ -297,7 +232,120 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1375057028}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 454966555}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 532675874}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 2106770023}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 512130128}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Pause
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1224301386}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Off
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 251549608}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Pause
+            m_BoolArgument: 1
+          m_CallState: 2
+  - _currentStateName: Player
+    _nextStateName: Pause
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 150465496}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1375057029}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &55326967
 GameObject:
@@ -347,7 +395,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Default
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1077525440}
@@ -396,7 +444,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 2083883255}
           m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
@@ -1156,7 +1204,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Player Drone
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1608355739}
@@ -1169,7 +1217,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 557021374}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
@@ -1207,7 +1255,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2098528073}
+        - m_Target: {fileID: 2018641406}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
           m_Mode: 3
@@ -1219,7 +1267,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2018641406}
+        - m_Target: {fileID: 2098528073}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
           m_Mode: 3
@@ -1350,8 +1398,8 @@ Transform:
   - {fileID: 1784179736}
   - {fileID: 220540554}
   - {fileID: 458859039}
-  - {fileID: 1585691168}
   - {fileID: 1240378480}
+  - {fileID: 1585691168}
   - {fileID: 1829847396}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1556,6 +1604,81 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &324032284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 324032285}
+  - component: {fileID: 324032286}
+  m_Layer: 0
+  m_Name: Transition Handler - From Pause
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &324032285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324032284}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693100642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324032286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324032284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c37798e0dc1925438e5624b7e9047fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateManager: {fileID: 693100641}
+  _transitionArray:
+  - _currentStateName: Pause
+    _nextStateName: '*'
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 915599772}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2018641407}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1816,81 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &339343929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339343930}
+  - component: {fileID: 339343931}
+  m_Layer: 0
+  m_Name: Transition Handler - From Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &339343930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339343929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 693100642}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &339343931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339343929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c37798e0dc1925438e5624b7e9047fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stateManager: {fileID: 693100641}
+  _transitionArray:
+  - _currentStateName: Player
+    _nextStateName: '*'
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 772367858}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2083883255}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &360211486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1939,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: 
     _nextStateName: Init
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1610556280}
@@ -1804,6 +2002,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1375057028}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1610556281}
           m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
           m_MethodName: set_interactable
@@ -1828,42 +2038,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 2106770023}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 454966555}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 150465496}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 512130128}
           m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
           m_MethodName: TryChangeState
@@ -1874,7 +2048,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Off
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1224301386}
           m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
@@ -1886,7 +2060,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Off
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 251549608}
           m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
@@ -1898,7 +2072,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Off
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!1 &366499641
 GameObject:
@@ -1948,7 +2122,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Conversation
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 616662837}
@@ -2209,7 +2383,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Pause
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1608355739}
@@ -2222,7 +2396,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 557021374}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
@@ -2260,6 +2434,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2018641406}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 2098528073}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -2272,10 +2458,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2018641406}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
+        - m_Target: {fileID: 915599772}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2295,18 +2481,6 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 915599772}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &473464523
 GameObject:
@@ -2356,7 +2530,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Off
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 616662837}
@@ -2587,7 +2761,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Player
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 616662837}
@@ -3267,6 +3441,8 @@ Transform:
   - {fileID: 49848488}
   - {fileID: 1274802168}
   - {fileID: 1302582522}
+  - {fileID: 324032285}
+  - {fileID: 339343930}
   - {fileID: 1687542350}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3318,7 +3494,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Off
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1608355739}
@@ -3331,7 +3507,7 @@ MonoBehaviour:
             m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 557021374}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
@@ -3369,18 +3545,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2098528073}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 2018641406}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -3393,22 +3557,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 915599772}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2018641407}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
+        - m_Target: {fileID: 2098528073}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4015,11 +4167,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stateManager: {fileID: 693100641}
   _transitionArray:
-  - _currentStateName: Login
+  - _currentStateName: '*'
     _nextStateName: Player
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1610556280}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 532675873}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -4030,64 +4194,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - _currentStateName: Pause
-    _nextStateName: Player
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 454966554}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - _currentStateName: Conversation
-    _nextStateName: Player
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 150465495}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - _currentStateName: Cutscene
-    _nextStateName: Player
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1375057028}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _currentStateName: '*'
-    _nextStateName: Player
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
         - m_Target: {fileID: 2106770022}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -4100,6 +4208,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 454966554}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 150465495}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1375057028}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -4112,18 +4244,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 512130128}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Player
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 2106770023}
           m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
           m_MethodName: set_interactable
@@ -4133,7 +4253,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Game
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 454966555}
@@ -4145,7 +4265,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Game
+            m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 150465496}
@@ -4157,20 +4277,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Game
+            m_StringArgument: 
             m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 532675874}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Game
-            m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1375057029}
           m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
@@ -4181,7 +4289,19 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Game
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 512130128}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Player
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1224301386}
@@ -4195,6 +4315,52 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: Default
             m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 251549608}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Player Roam
+            m_BoolArgument: 1
+          m_CallState: 2
+  - _currentStateName: Login
+    _nextStateName: Player
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 532675874}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _currentStateName: Pause
+    _nextStateName: Player
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 532675874}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &905204063
 GameObject:
@@ -5358,7 +5524,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Login
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 616662837}
@@ -5469,7 +5635,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Map
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1608355739}
@@ -5482,7 +5648,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 557021374}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
@@ -5520,18 +5686,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2098528073}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 2018641406}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -5544,14 +5698,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2018641407}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
+        - m_Target: {fileID: 2098528073}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -5563,10 +5717,22 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 2018641407}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1244517396
 GameObject:
@@ -5882,11 +6048,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stateManager: {fileID: 693100641}
   _transitionArray:
-  - _currentStateName: Player
+  - _currentStateName: '*'
     _nextStateName: Conversation
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1610556280}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 532675873}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 2106770022}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -5897,14 +6087,9 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
           m_CallState: 2
-  - _currentStateName: Cutscene
-    _nextStateName: Conversation
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1375057028}
+        - m_Target: {fileID: 454966554}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
           m_Mode: 3
@@ -5913,36 +6098,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Conversation
-            m_BoolArgument: 0
-          m_CallState: 2
-  - _currentStateName: '*'
-    _nextStateName: Conversation
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 512130128}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Conversation
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 251549608}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: Conversation
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 150465495}
@@ -5954,7 +6110,43 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: Conversation
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1375057028}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2106770023}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 150465496}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1375057029}
@@ -5964,58 +6156,22 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 512130128}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Conversation
             m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 2106770023}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Conversation
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 454966555}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Conversation
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 532675874}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Conversation
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 150465496}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Conversation
-            m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1224301386}
           m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
@@ -6024,9 +6180,38 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Off
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 251549608}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Conversation
+            m_BoolArgument: 1
+          m_CallState: 2
+  - _currentStateName: Player
+    _nextStateName: Conversation
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 454966555}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1284582792
@@ -6215,9 +6400,69 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Cutscene
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1610556280}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 532675873}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2106770022}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 454966554}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 150465495}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1375057028}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -6228,18 +6473,6 @@ MonoBehaviour:
             m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 512130128}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Off
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 2106770023}
@@ -6251,7 +6484,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: Conversation
+            m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 150465496}
@@ -6263,37 +6496,25 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: Conversation
+            m_StringArgument: 
             m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 251549608}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Off
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 454966555}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Off
-            m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1375057029}
           m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
           m_MethodName: set_interactable
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 512130128}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6314,39 +6535,17 @@ MonoBehaviour:
             m_StringArgument: Off
             m_BoolArgument: 0
           m_CallState: 2
-  - _currentStateName: Player
-    _nextStateName: Cutscene
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2106770022}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
+        - m_Target: {fileID: 251549608}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - _currentStateName: Conversation
-    _nextStateName: Cutscene
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 150465495}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
+            m_StringArgument: Off
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1310981124
 GameObject:
@@ -6948,7 +7147,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Off
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1077525440}
@@ -6979,30 +7178,6 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
           m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 772367858}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2083883255}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7059,7 +7234,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Conversation
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1608355739}
@@ -7072,7 +7247,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 557021374}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
@@ -7110,18 +7285,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2098528073}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 2018641406}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -7130,6 +7293,18 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2098528073}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -7538,7 +7713,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Pause
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 616662837}
@@ -8154,7 +8329,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Player Roam
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1608355739}
@@ -8167,7 +8342,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 557021374}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
@@ -8205,18 +8380,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2098528073}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 2018641406}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -8229,22 +8392,10 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2018641407}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 915599772}
-          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
-          m_MethodName: set_interactable
-          m_Mode: 6
+        - m_Target: {fileID: 2098528073}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8402,9 +8553,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _stateManager: {fileID: 693100641}
   _transitionArray:
-  - _currentStateName: Init
+  - _currentStateName: '*'
     _nextStateName: Login
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1610556280}
@@ -8417,30 +8568,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 1
+            m_BoolArgument: 0
           m_CallState: 2
-  - _currentStateName: Pause
-    _nextStateName: Login
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 454966554}
-          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
-          m_MethodName: SetColorByIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - _currentStateName: '*'
-    _nextStateName: Login
-    _OnTransition:
-      m_PersistentCalls:
-        m_Calls:
         - m_Target: {fileID: 532675873}
           m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
           m_MethodName: SetColorByIndex
@@ -8453,16 +8582,52 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 512130128}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
+        - m_Target: {fileID: 2106770022}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Login
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 454966554}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 150465495}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1375057028}
+          m_TargetAssemblyTypeName: TextMeshColorChanger, Assembly-CSharp
+          m_MethodName: SetColorByIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 532675874}
@@ -8472,33 +8637,9 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Login
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1224301386}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Off
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 251549608}
-          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
-          m_MethodName: TryChangeState
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: Off
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 2106770023}
@@ -8508,10 +8649,80 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 512130128}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Login
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1224301386}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: Off
             m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 251549608}
+          m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
+          m_MethodName: TryChangeState
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Off
+            m_BoolArgument: 1
+          m_CallState: 2
+  - _currentStateName: Init
+    _nextStateName: Login
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1610556281}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _currentStateName: Pause
+    _nextStateName: Login
+    OnTransition:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 454966555}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1888323813
 GameObject:
@@ -8695,7 +8906,7 @@ MonoBehaviour:
   _transitionArray:
   - _currentStateName: '*'
     _nextStateName: Drone
-    _OnTransition:
+    OnTransition:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1077525440}
@@ -8734,6 +8945,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 772367858}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 2083883255}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+          m_MethodName: set_interactable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 251549608}
           m_TargetAssemblyTypeName: StateManager, Assembly-CSharp
           m_MethodName: TryChangeState
@@ -8744,7 +8979,7 @@ MonoBehaviour:
             m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: Player Drone
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
 --- !u!1 &1973676110
 GameObject:
